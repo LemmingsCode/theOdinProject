@@ -1,45 +1,65 @@
-var computerChoice = 0;
+var playerScore = 0;
+var computerScore = 0;
+// var validateRock = 'ROCK';
+// var validatePaper = 'PAPER';
+// var validateScissors = 'SCISSORS';
+// var inputValidation = ['PAPER', 'ROCK', 'SCISSORS'];
+
 
 function computerPlay() {
     let computerCase = Math.floor(Math.random() * 3) ;
     if (computerCase === 0){
-        computerChoice = "ROCK";
+        computerRandom = "Rock";
     } else if (computerCase == 1) {
-        computerChoice = "PAPER";
+        computerRandom = "Paper";
     } else {
-        computerChoice = "SCISSORS";
+        computerRandom = "Scissors";
     }
-    console.log(computerChoice);
-    // return computerChoice;
+    return computerRandom;
 }
 
-function playRound(playerSelection, computerSelection) {
-    var playerScore = 0;
-    var computerScore = 0;
-    var upperPlayerSelection = playerSelection.toUpperCase();
-    if (upperPlayerSelection === computerChoice) {
-        console.log("draw");
-    } else if (upperPlayerSelection === "ROCK" && computerChoice === "PAPER") {
+function playRound(playerSelection, computerRandom) {
+    var upperPlayerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
+
+    if (upperPlayerSelection === computerRandom) {
+        return "It's a draw!";
+    } else if (upperPlayerSelection === "Rock" && computerRandom === "Paper") {
         computerScore++;
-        console.log("lose");
-    } else if (upperPlayerSelection === "ROCK" && computerChoice === "SCISSORS") {
+        return "You Lose! " + computerRandom + " beats " + upperPlayerSelection;
+    } else if (upperPlayerSelection === "Rock" && computerRandom === "Scissors") {
         playerScore++;
-        console.log("win");
-    } else if (upperPlayerSelection === "PAPER" && computerChoice === "SCISSORS") {
+        return "You Win! " + upperPlayerSelection + " beats " + computerRandom;
+    } else if (upperPlayerSelection === "Paper" && computerRandom === "Scissors") {
         computerScore++;
-        console.log("lose");
-    } else if (upperPlayerSelection === "PAPER" && computerChoice === "ROCK") {
+        return "You Lose! " + computerRandom + " beats " + upperPlayerSelection;
+    } else if (upperPlayerSelection === "Paper" && computerRandom === "Rock") {
         playerScore++;
-        console.log("win");
-    } else if (upperPlayerSelection === "SCISSORS" && computerChoice === "ROCK") {
+        return "You Win! " + upperPlayerSelection + " beats " + computerRandom;
+    } else if (upperPlayerSelection === "Scissors" && computerRandom === "Rock") {
         computerScore++;
-        console.log("lose");
-    } else if (upperPlayerSelection === "SCISSORS" && computerChoice === "PAPER") {
+        return "You Lose! " + computerRandom + " beats " + upperPlayerSelection;
+    } else if (upperPlayerSelection === "Scissors" && computerRandom === "Paper") {
         playerScore++;
-        console.log("win");
+        return "You Win! " + upperPlayerSelection + " beats " + computerRandom;
     }
 }
     
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    var totalRounds = 1;
+    for (let i = 0; i < totalRounds; i++) {
+        var computerSelection = computerPlay(); //initiate computer selection
+        var playerSelection = prompt("Do you choose Rock, Paper, or Scissors?"); //initiate player selection
+        // console.log("Please enter a valid input");
+        console.log(playRound(playerSelection, computerSelection)); 
+    }
+
+    if (computerScore > playerScore) {
+        console.log("You lose, computer scored " + computerScore + " and you scored " + playerScore);
+    } else if (computerScore === playerScore) {
+        console.log("It's a draw! No winner, score was both " + computerScore);
+    } else {
+        console.log("You win, computer scored " + computerScore + " and you scored " + playerScore);
+    }
+}
+
+game();
