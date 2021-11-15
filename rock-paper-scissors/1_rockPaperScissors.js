@@ -1,8 +1,8 @@
 var playerScore = 0;
 var computerScore = 0;
-// var validateRock = 'ROCK';
-// var validatePaper = 'PAPER';
-// var validateScissors = 'SCISSORS';
+var validateRock = 'ROCK';
+var validatePaper = 'PAPER';
+var validateScissors = 'SCISSORS';
 // var inputValidation = ['PAPER', 'ROCK', 'SCISSORS'];
 
 
@@ -49,6 +49,24 @@ function game() {
     for (let i = 0; i < totalRounds; i++) {
         var computerSelection = computerPlay(); //initiate computer selection
         var playerSelection = prompt("Do you choose Rock, Paper, or Scissors?"); //initiate player selection
+        do {
+            if (
+                playerSelection.toUpperCase() == validatePaper || 
+                playerSelection.toUpperCase() == validateRock || 
+                playerSelection.toUpperCase() == validateScissors 
+                ) {
+                    break;
+                } else {
+                    console.log("Please input Rock, Paper, or Scissors")
+                    var playerSelection = prompt("Do you choose Rock, Paper, or Scissors?"); //initiate player selection
+            }
+        }
+        while (
+            playerSelection.toUpperCase() !== validatePaper || 
+            playerSelection.toUpperCase() !== validateRock || 
+            playerSelection.toUpperCase() !== validateScissors 
+            )
+        
         // console.log("Please enter a valid input");
         console.log(playRound(playerSelection, computerSelection)); 
     }
@@ -56,7 +74,7 @@ function game() {
     if (computerScore > playerScore) {
         console.log("You lose, computer scored " + computerScore + " and you scored " + playerScore);
     } else if (computerScore === playerScore) {
-        console.log("It's a draw! No winner, score was both " + computerScore);
+        console.log("No winner, score was both " + computerScore);
     } else {
         console.log("You win, computer scored " + computerScore + " and you scored " + playerScore);
     }
