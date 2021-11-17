@@ -1,0 +1,114 @@
+[33mcommit fdb58c982d26e6013e643dcfb039e0caa164f17b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Wed Nov 17 19:53:03 2021 +1100
+
+    Added features: announce winner when score reaches 5, modify score on scoreboard
+
+[33mcommit a13f1960ef2338aa77e139e0e0f233365ab2243d[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Wed Nov 17 14:23:19 2021 +1100
+
+    Created buttons and event listeners for each player choice in the RPS game
+
+[33mcommit 7cc91cdafc689d5281d0393afc254a028da3617c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/implementing-UI-RPS[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mimplementing-UI-RPS[m[33m)[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Wed Nov 17 09:56:31 2021 +1100
+
+    Completed drumkit exercise
+
+[33mcommit 2f87a85f114944325ea4fa1cbcca167b6f26bbd0[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 19:42:27 2021 +1100
+
+    Added user input validation
+
+[33mcommit 7df9dd01585b9e929e07c65c1113d62a2d50bef3[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 19:34:56 2021 +1100
+
+    Completed game function. Need to add in validation for user input next
+
+[33mcommit f7281ece72f12d2feec090ffee454c5422106d56[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 16:08:52 2021 +1100
+
+    Completed all initial cases for winning and losing against computer
+
+[33mcommit 7432518907571819991304f4ca025f9e9c92d075[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 14:34:26 2021 +1100
+
+    adding odin recipes
+
+[33mcommit 899ba13134a5e301124178aaa3813e0b5630c650[m
+Merge: 4f931e2 96e4c2f
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 14:31:41 2021 +1100
+
+    Merge branch 'main' of github.com:LemmingsCode/theOdinProject into main
+
+[33mcommit 4f931e2cd95d840c07fab7ad6ea177b7e089dd9f[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 14:30:11 2021 +1100
+
+    Completing rock paper scissors game
+
+[33mcommit 3a3691a9b7543fda1425dc8192f50cce973770f6[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 14:13:09 2021 +1100
+
+    Finished the exercise section
+
+[33mcommit bf5f93197427a7f3983222a57711f82fa0adef2f[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 10:48:00 2021 +1100
+
+    Completed Exercise
+
+[33mcommit 96e4c2f910e6d8c6f242bcc182cbbf7e947443a6[m
+Author: LemmingsCode <94258429+LemmingsCode@users.noreply.github.com>
+Date:   Mon Nov 15 07:33:17 2021 +1100
+
+    Update README.md
+
+[33mcommit ae96b26c7cfe51a2f5ee8e5127a381f9a117d126[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 07:15:36 2021 +1100
+
+    shuffled files around in repository to keep everything in one place
+
+[33mcommit 7c176d7cbfba528f5fcf8fe55610a5c62109008f[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 07:11:41 2021 +1100
+
+    Adding readme file
+
+[33mcommit 5799aef390f56fc6141a8315f86c9d9aa957b6c3[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 07:10:02 2021 +1100
+
+    testing
+
+[33mcommit 9586f957199b0dd475d73e72f5342ab899c14e4d[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Mon Nov 15 07:09:28 2021 +1100
+
+    Created dom manipulation exercise files
+
+[33mcommit df82f1cc459e698d75af93b44eadc9646b21a5fb[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Sun Nov 14 11:53:52 2021 +1100
+
+    test
+
+[33mcommit 958920f35b86eeee5b6efa944a85a3d204c69707[m
+Author: LemmingsCode <stevecodecamp@gmail.com>
+Date:   Sun Nov 14 11:36:36 2021 +1100
+
+    hello_world.txt
+
+[33mcommit 695c9dae9e00e46c685cf9abc344ecfa9723601e[m
+Author: LemmingsCode <94258429+LemmingsCode@users.noreply.github.com>
+Date:   Sun Nov 14 09:30:04 2021 +1100
+
+    Initial commit
