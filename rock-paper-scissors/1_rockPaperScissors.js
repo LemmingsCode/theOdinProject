@@ -3,6 +3,7 @@ var computerScore = 0;
 var validateRock = 'ROCK';
 var validatePaper = 'PAPER';
 var validateScissors = 'SCISSORS';
+const maxScore = 5;
 // var inputValidation = ['PAPER', 'ROCK', 'SCISSORS'];
 
 
@@ -44,7 +45,7 @@ function playRound(playerSelection, computerRandom) {
     }
 }
     
-function game() {
+function gamePromptPlayer() {
     var totalRounds = 1;
     for (let i = 0; i < totalRounds; i++) {
         var computerSelection = computerPlay(); //initiate computer selection
@@ -80,30 +81,24 @@ function game() {
     }
 }
 
-
 const btn = document.querySelector('#btn');
 
 function playerButtonSelection(e) {
+    if(!e.target.id) return;
     console.log(e.target.id);
     console.log(playRound(e.target.id, computerPlay()));
+    setScore();
+    
+    if (playerScore === maxScore) {
+        alert("Game Over Player Wins!")
+    } else if (computerScore === maxScore) {
+        alert("Game Over Computer Wins!")
+    }
+}
+
+function setScore() {
+    document.querySelector(".player__score").innerText = playerScore;
+    document.querySelector(".computer__score").innerText = computerScore;
 }
 
 window.addEventListener('click', playerButtonSelection);
-
-// const btn = document.querySelector('#btn');
-// btn.addEventListener('click', function (e) {
-//     // console.log(e.target);
-//     e.target.style.background = 'blue';
-// });
-
-// // buttons is a node list. It looks and acts much like an array.
-// const buttons = document.querySelectorAll('button');
-
-// // we use the .forEach method to iterate through each button
-// buttons.forEach((button) => {
-
-//     // and for each one we add a 'click' listener
-//     button.addEventListener('click', () => {
-//         alert(button.id);
-//     });
-// });
