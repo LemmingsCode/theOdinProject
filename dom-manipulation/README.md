@@ -14,3 +14,8 @@ By the end of this lesson, you should be able to do the following:
 4.	Explain the basic methods for finding/adding/removing and altering DOM nodes.
 5.	Explain the difference between a “nodelist” and an “array of nodes”.
 6.	Explain what “bubbling” is and how it works.
+
+Tasks completed:  
+1. Finished drumkit exercise by following tutorial on Youtube by Wesbos: https://www.youtube.com/watch?v=VuN8qwZoego
+2. Modified RPS game to include a simple UI with button clicks and event listeners, and added a scoreboard
+3. Finished exercise on event capture, propogation, and bubbling by Wesbos: https://www.youtube.com/watch?v=F1anRyL37lE
